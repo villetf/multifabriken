@@ -1,9 +1,11 @@
-﻿bool continueRepeat = true;
+﻿using multifabriken;
+
+bool continueRepeat = true;
+Factory factory = new Factory("Multifabriken AB");
 while (continueRepeat)
 {
    Console.Clear();
-   // Console.WriteLine($"Välkommen till {factory.Name}!");
-   Console.WriteLine($"Välkommen till Multifabriken AB!");
+   Console.WriteLine($"Välkommen till {factory.Name}!");
    Console.WriteLine("");
    Console.WriteLine("Välj något av följande valalterantiv:");
    Console.WriteLine("1. Lägg till bil i varukorg");
@@ -12,7 +14,7 @@ while (continueRepeat)
    Console.WriteLine("4. Lägg till havremjölk i varukorg");
    Console.WriteLine("5. Visa varukorg");
    Console.WriteLine("6. Avsluta");
-   string stringAnswer = Console.ReadLine();
+   string? stringAnswer = Console.ReadLine();
    int answer;
    if (int.TryParse(stringAnswer, out answer))
    {
