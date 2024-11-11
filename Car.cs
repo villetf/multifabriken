@@ -3,7 +3,7 @@ using System.Drawing;
 
 namespace multifabriken;
 
-public class Car
+public class Car : Product
 {
    public string LicensePlate;
    public string Color;
