@@ -40,6 +40,7 @@ while (continueRepeat)
          Cart.AddOatmilk();
          break;
       case 5:
+         Console.Clear();
          Console.WriteLine("Din kundkorg innehåller:");
          Console.WriteLine("");
          foreach (var product in Cart.Products)

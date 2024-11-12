@@ -13,6 +13,6 @@ public class Pipe : Product
    }
 
    public override string GetProductInfo() {
-      return $"Rör med längden {this.Length} meter och diametern {this.Diameter}";
+      return $"Rör med längden {this.Length} meter och diametern {this.Diameter} meter";
    }
 }
