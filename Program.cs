@@ -75,7 +75,15 @@ while (continueRepeat)
          Cart.Products.Add(NewOatMilk);
          break;
       case 5:
-         Console.WriteLine("Du valde 5");
+         Console.WriteLine("Din kundkorg innehåller:");
+         Console.WriteLine("");
+         foreach (var product in Cart.Products)
+         {
+            Console.WriteLine(product.GetProductInfo());
+         }
+         Console.WriteLine("");
+         Console.WriteLine("Tryck på en tangent att gå tillbaka");
+         Console.ReadKey();
          break;
       case 6:
          continueRepeat = false;

@@ -14,4 +14,8 @@ public class Car : Product
       this.Color = color;
       this.Brand = brand;
    }
+
+   public  override string GetProductInfo() {
+      return $"{this.Color} bil av märket {this.Brand}, med registreringsnummer {this.LicensePlate}";
+   }
 }
