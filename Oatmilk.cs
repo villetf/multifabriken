@@ -11,4 +11,8 @@ public class Oatmilk : Product
       this.Fat = fat;
       this.Litres = litres;
    }
+
+   public override string GetProductInfo() {
+      return $"Havremjölk med fetthalten {this.Fat}%, {this.Litres} liter";
+   }
 }

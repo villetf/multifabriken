@@ -11,4 +11,8 @@ public class Pipe : Product
       this.Length = length;
       this.Diameter = diameter;
    }
+
+   public override string GetProductInfo() {
+      return $"Rör med längden {this.Length} meter och diametern {this.Diameter}";
+   }
 }

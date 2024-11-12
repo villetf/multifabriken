@@ -2,7 +2,7 @@ using System;
 
 namespace multifabriken;
 
-public class Product
+public abstract class Product
 {
-
+   public abstract string GetProductInfo();
 }
